@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemZarzadzaniaKolekcjami.Views.EdycjaKolekcjiPage"
+             xmlns:vm="clr-namespace:SystemZarzadzaniaKolekcjami.ViewModels">
+    <ContentPage.BindingContext>
+        <vm:EdycjaKolekcjiViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Button Text="Zapisz element"
+                Command="{Binding ZapiszElementCommand}"/>
+        <Button Text="Usuń element"
+                Command="{Binding UsunElementCommand}"/>
+    </StackLayout>
+</ContentPage>
